@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>CIS 598</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!--Delete embedded styles, just for example.-->
+	<style type="text/css">
+	
+	body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 40px 40px;
+	}
+
+	p {
+	margin-bottom: 20px;
+	}
+	
+	nl{
+	list-style-type: none;
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="threecol">
+			<h1>Brian Cain</h1>
+			<ul>
+				<li><a href="index.html"><img src="http://people.cis.ksu.edu/~bccain/me.png" alt="it's me!"/></a></li>
+				</li><h5><p>Office: 223 Nichols Hall</br>bccain <i>at</i> ksu <i>dot</i> edu</p></h5></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="cis598.html">CIS 598</a></li>
+				<li><a href="about.html">About Me</a></li>
+			</ul>
+		</div>
+		<div class="ninecol last">
+			<h1>CIS 598: Computer Science Senior Project</h1><br>
+			<p>Welcome to my page about CIS 598 Spring 2012. Please look below to find out more information about my project.</p>
+			<p>I want to thank <a href="http://people.cis.ksu.edu/~eyv/" target="_blank">Eugene Vasserman</a> for taking the time to be my project adviser this semester.<p>
+			<h2>Project Idea</h2><br>
+			<h3>Abstract</h3><br>
+			<p>Membership Concealment Overlay Network (or MCON) is an anonymous and censorship-resistant system consisting of a large network of nodes that are connected by physical links. My part in this project is to simulate a situation where a new node is invited by multiple members of MCON. This new node needs a map of how the network is laid out. Creating a map of the network is a difficult process because the network conceals the exact topology information, however each node conceals its identity by encrypting its identification information before sending it on, which reveals no real information about the exact identity of any members. Through interprocess communication, the source floods its physical neighbors, and sends a discovery message through a series of intermediate nodes until it reaches its destination creating a logical link from the source node to the destination node. This is done by simulating flooding and networking through the Python programming language. Each node is its own process, and during the flood, it communicates through Queues to pass messages between one another. Before processing a message and continuing with the flood, each node must keep track of the previous hop and the next hop to tell each node whether or not it has seen the flood message before. This allows for all possible routes to be constructed for the network topology map.</p>
+			<ul>
+				<li><a href="pres1.html">Presentation One</a></li>
+				<li><a href="pres2.html">Presentation Two</a></li>
+        <li><a href="pres3.html">Presentation Three</a></li>
+			</ul>
+			<br><br><h2>Documentation</h2><br>
+			<h3>Github</h3></br>
+			<p>You can find my code on <a href="https://github.com/lawlypop/CIS-598-Senior-Project" target="_blank">Github</a>.</p>
+			<!-- https://github.com/TylerLH/github-latest-commits-widget --->
+			<iframe src="http://tylerlh.github.com/github-latest-commits-widget/?username=lawlypop&repo=CIS-598-Senior-Project&limit=3"allowtransparency="true" frameborder="0" scrolling="no" width="502px" height="252px"></iframe>
+			<br><br><h3>Categories</h3><br>
+			<p>The time log will be based off this set of categories:</p>
+			<dl>
+				<li>Research - This includes reading and looking up information on the internet.</li>
+				<li>Coding - Programming the project or code related to it.</li>
+				<li>Meetings - Meetings with a CIS advisor or as a class</li>
+			</dl><br>
+			<h3>Time Log</h3><br>
+			<dl>
+				<li><a href="Log/jan27.html">January 27th</a></li>
+				<li><a href="Log/feb3.html">February 3rd</a></li>
+				<li><a href="Log/feb10.html">Februrary 10th</a></li>
+				<li><a href="Log/feb17.html">February 17th</a></li>
+				<li><a href="Log/feb24.html">February 24th</a></li>
+				<li><a href="Log/march9.html">March 9th</a></li>
+				<li><a href="Log/march17.html">March 17th</a></li>
+				<li><a href="Log/march23.html">March 23rd</a></li>
+				<li><a href="Log/march30.html">March 30th</a></li>
+				<li><a href="Log/april6.html">April 6th</a></li>
+				<li><a href="Log/april14.html">April 14th</a></li>
+				<li><a href="Log/april20.html">April 20th</a></li>
+				<li><a href="Log/april28.html">April 28th</a></li>
+				<li><a href="Log/may4.html">May 4th</a></li>
+			</dl>
+		</div>
+	</div>
+</div>
+
+
+</body>
+
+</html>
